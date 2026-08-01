@@ -1,47 +1,14 @@
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
 import "./App.css";
 
 function App() {
   return (
     <>
-      <header className="site-header">
-        <nav className="container navbar" aria-label="Main navigation">
-          <a className="brand" href="#home">
-            Jay-Ar Bote
-          </a>
-
-          <div className="nav-links">
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#journey">Journey</a>
-            <a href="#contact">Contact</a>
-          </div>
-        </nav>
-      </header>
+      <Navbar />
 
       <main>
-        <section className="hero section" id="home">
-          <div className="container">
-            <p className="section-label">BIM × SOFTWARE DEVELOPMENT</p>
-
-            <h1>BIM Specialist building practical software solutions</h1>
-
-            <p className="hero-description">
-              I combine construction and BIM experience with web development,
-              automation, and AI to solve real industry problems.
-            </p>
-
-            <div className="hero-actions">
-              <a className="button button-primary" href="#projects">
-                View my projects
-              </a>
-
-              <a className="button button-secondary" href="#about">
-                Learn more about me
-              </a>
-            </div>
-          </div>
-        </section>
+        <Hero />
 
         <section className="section section-placeholder" id="about">
           <div className="container">
