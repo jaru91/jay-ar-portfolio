@@ -1,5 +1,7 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import About from "./components/About";
+import Skills from "./components/Skills";
 import "./App.css";
 
 function App() {
@@ -10,21 +12,9 @@ function App() {
       <main>
         <Hero />
 
-        <section className="section section-placeholder" id="about">
-          <div className="container">
-            <p className="section-label">01 / ABOUT</p>
-            <h2>About me</h2>
-            <p>This section will introduce my BIM-to-software journey.</p>
-          </div>
-        </section>
+        <About />
 
-        <section className="section section-placeholder" id="skills">
-          <div className="container">
-            <p className="section-label">02 / SKILLS</p>
-            <h2>Technical skills</h2>
-            <p>This section will organize my development and BIM capabilities.</p>
-          </div>
-        </section>
+        <Skills />
 
         <section className="section section-placeholder" id="projects">
           <div className="container">
