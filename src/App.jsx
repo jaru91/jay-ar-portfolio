@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
+import Journey from "./components/Journey";
 import "./App.css";
 
 function App() {
@@ -15,14 +16,7 @@ function App() {
         <About />
         <Skills />
         <Projects />
-
-        <section className="section section-placeholder" id="journey">
-          <div className="container">
-            <p className="section-label">04 / JOURNEY</p>
-            <h2>Learning journey</h2>
-            <p>This section will show my professional development milestones.</p>
-          </div>
-        </section>
+        <Journey /> 
 
         <section className="section section-placeholder" id="contact">
           <div className="container">
