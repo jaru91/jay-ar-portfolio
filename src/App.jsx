@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Skills from "./components/Skills";
+import Projects from "./components/Projects";
 import "./App.css";
 
 function App() {
@@ -11,18 +12,9 @@ function App() {
 
       <main>
         <Hero />
-
         <About />
-
         <Skills />
-
-        <section className="section section-placeholder" id="projects">
-          <div className="container">
-            <p className="section-label">03 / PROJECTS</p>
-            <h2>Featured projects</h2>
-            <p>This section will present completed, active, and planned work.</p>
-          </div>
-        </section>
+        <Projects />
 
         <section className="section section-placeholder" id="journey">
           <div className="container">
