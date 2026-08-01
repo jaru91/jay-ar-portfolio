@@ -4,6 +4,7 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Journey from "./components/Journey";
+import Contact from "./components/Contact";
 import "./App.css";
 
 function App() {
@@ -17,14 +18,7 @@ function App() {
         <Skills />
         <Projects />
         <Journey /> 
-
-        <section className="section section-placeholder" id="contact">
-          <div className="container">
-            <p className="section-label">05 / CONTACT</p>
-            <h2>Let’s connect</h2>
-            <p>This section will provide my professional contact links.</p>
-          </div>
-        </section>
+        <Contact />
       </main>
 
       <footer className="site-footer">
