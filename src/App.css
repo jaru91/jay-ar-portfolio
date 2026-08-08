@@ -1,4 +1,37 @@
 /* ========================================
+   Accessibility utilities
+======================================== */
+
+.skip-link {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1000;
+  padding: 0.75rem 1rem;
+  border-radius: 0.25rem;
+  background-color: var(--color-accent);
+  color: var(--color-background);
+  font-weight: 700;
+  transform: translateY(-200%);
+  transition: transform 180ms ease;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 4px;
+}
+
+#main-content:focus {
+  outline: none;
+}
+
+
+/* ========================================
    Page foundation
 ======================================== */
 
@@ -771,5 +804,21 @@
 
   .contact-link {
     font-size: 1rem;
+  }
+
+}
+
+
+  @media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }

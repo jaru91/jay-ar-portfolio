@@ -10,14 +10,18 @@ import "./App.css";
 function App() {
   return (
     <>
+      <a className="skip-link" href="#main-content">
+        Skip to main content
+      </a>
+
       <Navbar />
 
-      <main>
+      <main id="main-content" tabIndex={-1}>
         <Hero />
         <About />
         <Skills />
         <Projects />
-        <Journey /> 
+        <Journey />
         <Contact />
       </main>
 

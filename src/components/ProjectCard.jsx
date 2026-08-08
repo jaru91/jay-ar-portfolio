@@ -15,11 +15,14 @@ function ProjectCard({ project }) {
 
       <p className="project-description">{project.description}</p>
 
-      <ul className="project-tech-list" aria-label="Technologies used">
-        {project.technologies.map((technology) => (
-          <li key={technology}>{technology}</li>
-        ))}
-      </ul>
+        <ul
+          className="project-tech-list"
+          aria-label={`${project.title} technologies`}
+        >
+          {project.technologies.map((technology) => (
+            <li key={technology}>{technology}</li>
+          ))}
+        </ul>
 
       <div className="project-card-footer">
         {hasProjectLinks ? (
@@ -29,7 +32,8 @@ function ProjectCard({ project }) {
                 className="project-link"
                 href={project.repositoryUrl}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
+                aria-label={`Open ${project.title} GitHub repository in a new tab`}
               >
                 GitHub repository
               </a>
@@ -40,7 +44,8 @@ function ProjectCard({ project }) {
                 className="project-link"
                 href={project.liveUrl}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
+                aria-label={`Open ${project.title} live demo in a new tab`}
               >
                 Live demo
               </a>
