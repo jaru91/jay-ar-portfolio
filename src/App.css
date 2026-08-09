@@ -714,9 +714,29 @@ button:focus-visible {
     min-height: 4rem;
   }
 
-  .nav-links {
-    display: none;
-  }
+.site-header {
+  overflow-x: auto;
+}
+
+.navbar {
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding-block: 0.875rem;
+}
+
+.nav-links {
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+  overflow-x: auto;
+  padding-bottom: 0.25rem;
+  white-space: nowrap;
+}
+
+.nav-links a {
+  flex: 0 0 auto;
+}
 
   .hero {
     min-height: calc(100vh - 4rem);
